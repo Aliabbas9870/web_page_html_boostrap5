@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RSLuxury Property</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script defer src="script.js"></script>
+
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">RSLuxury</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon " style="color: aliceblue;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        <!-- Bootstrap Carousel with Indicators & Auto Slide -->
+        <div id="propertyCarousel" class="carousel slide"
+            data-bs-ride="carousel" data-bs-interval="2000">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#propertyCarousel"
+                    data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#propertyCarousel"
+                    data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#propertyCarousel"
+                    data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#propertyCarousel"
+                    data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/slid5.jpg" class="d-block w-100"
+                        alt="Vella Property">
+                    <div class="carousel-caption  d-md-block">
+                        <h3>Vella Luxury Villas</h3>
+                        <p>Exclusive modern villas with top-tier amenities.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slid2.jpg" class="d-block w-100"
+                        alt="Damac Property">
+                    <div class="carousel-caption d-md-block">
+                        <h3>Damac Properties</h3>
+                        <p>Luxury living in the heart of Dubai.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slid3.jpg" class="d-block w-100"
+                        alt="Emaar Property">
+                    <div class="carousel-caption  d-md-block">
+                        <h3>Emaar Residences</h3>
+                        <p>Elegant apartments with breathtaking city views.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/slid4.jpg" class="d-block w-100"
+                        alt="Dubai Property">
+                    <div class="carousel-caption  d-md-block">
+                        <h3>Dubai Luxury Properties</h3>
+                        <p>Explore the finest homes in Dubai.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property Cards Section -->
+        <section id="properties" class="container mt-5">
+            <div class="row">
+                <!-- Vella -->
+                <div class="col-md-4">
+                    <div class="card animated-card"
+                        onclick="window.location.href='https://vella.com'">
+                        <img src="assets/img/slid4.jpg" class="card-img-top"
+                            alt="Vella">
+                        <div class="card-body">
+                            <h5 class="card-title">Vella Luxury Villas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emaar -->
+                <div class="col-md-4">
+                    <div class="card animated-card"
+                        onclick="window.location.href='https://emaar.com'">
+                        <img src="assets/img/slid5.jpg" class="card-img-top"
+                            alt="Emaar">
+                        <div class="card-body">
+                            <h5 class="card-title">Emaar Residences</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Damac -->
+                <div class="col-md-4">
+                    <div class="card animated-card"
+                        onclick="window.location.href='https://damac.com'">
+                        <img src="assets/img/slid3.jpg" class="card-img-top"
+                            alt="Damac">
+                        <div class="card-body">
+                            <h5 class="card-title">Damac Properties</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubai Island -->
+                <div class="col-md-4">
+                    <div class="card animated-card"
+                        onclick="window.location.href='https://dubaiisland.com'">
+                        <img src="assets/img/slid2.jpg" class="card-img-top"
+                            alt="Dubai Island">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai Island Homes</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add More Cards Similarly -->
+            </div>
+        </section>
+
+        <!-- Community Ad Section -->
+        <section class="community-ad text-center">
+            <div class="container">
+                <h2 class="animate-title">Join Our Luxury Community</h2>
+                <p class="animate-text">Discover the best properties for your
+                    dream lifestyle.</p>
+                <a href="#properties" class="btn  explore-btn"
+                    style="background-color: #cd891d; color:white">Explore
+                    Properties</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-form p-4 shadow">
+                        <h2 class="text-center">Contact Us</h2>
+                        <p class="text-center">Get in touch with us for more
+                            details.</p>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control"
+                                    id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control"
+                                    id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" id="message"
+                                    rows="4" required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary w-100">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark text-light py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Company Info -->
+                    <div class="col-md-4">
+                        <h5>About RSLuxury</h5>
+                        <p>Discover premium luxury properties in Dubai with
+                            top-tier amenities.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-4">
+                        <h5>Properties</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Vella Luxury Villas</a></li>
+                            <li><a href="#">Damac Properties</a></li>
+                            <li><a href="#">Emaar Residences</a></li>
+                            <li><a href="#">Dubai Luxury Homes</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: <a href="mailto:info@rsluxury.com"> info@rsluxury.com</a></p>
+                        <p>Phone: +971 55 123 4567</p>
+                        <p>Location: Dubai, UAE</p>
+
+                        <!-- Social Icons -->
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center mt-3">
+                    <p>&copy; 2025 RSLuxury Property. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+   
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                Swal.fire({
+                    title: "Message Sent!",
+                    text: "Thank you for reaching out. We'll get back to you soon.",
+                    icon: "success",
+                    confirmButtonColor: "#3085d6",
+                    confirmButtonText: "OK"
+                });
+                document.getElementById("contactForm").reset();
+            });
+       
+
+
+
+        function openProperty(url) {
+            window.location.href = url;
+        }
+    </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
